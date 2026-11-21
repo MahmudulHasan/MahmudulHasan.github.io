@@ -31,7 +31,7 @@ test('nav links scroll to their sections', async ({ page, isMobile }) => {
 test('shows all GitHub projects with valid links', async ({ page }) => {
   const cards = page.getByTestId('projects').locator('a.project');
   await expect(cards).toHaveCount(6);
-  for (const name of ['EcommercePlaywright', 'PostmanReports', 'AutomateTodoProtractor', 'Leetcode-problems', 'Geeks4Geeks']) {
+  for (const name of ['EcommercePlaywright', 'PostmanReports', 'webdriverio-typescript-project', 'Leetcode-problems', 'Geeks4Geeks']) {
     const card = cards.filter({ hasText: name });
     await expect(card).toHaveAttribute('href', `https://github.com/MahmudulHasan/${name}`);
     await expect(card).toHaveAttribute('rel', /noopener/);
