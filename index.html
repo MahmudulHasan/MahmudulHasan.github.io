@@ -1,0 +1,324 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Mahmudul Hasan | Senior SDET</title>
+  <meta name="description" content="Mahmudul Hasan is a Senior Software Development Engineer in Test with 12+ years of experience in web, mobile and API test automation." />
+  <meta property="og:title" content="Mahmudul Hasan | Senior SDET" />
+  <meta property="og:description" content="12+ years building test automation frameworks with Playwright, WebdriverIO, Selenium, Appium and REST Assured." />
+  <meta property="og:type" content="website" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%2322d3a6'/%3E%3Ctext x='50%25' y='54%25' dominant-baseline='middle' text-anchor='middle' font-family='Arial' font-weight='700' font-size='28' fill='%230b1120'%3EMH%3C/text%3E%3C/svg%3E" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
+  <script>
+    // Apply saved theme before paint to avoid a flash
+    try {
+      const t = localStorage.getItem('theme');
+      if (t) document.documentElement.dataset.theme = t;
+    } catch (e) {}
+  </script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header" data-testid="header">
+    <nav class="nav container" aria-label="Main">
+      <a href="#home" class="brand" aria-label="Mahmudul Hasan, home">
+        <span class="brand-mark">MH</span>
+        <span class="brand-name">Mahmudul Hasan</span>
+      </a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu" data-testid="menu-toggle">
+        <span></span><span></span><span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li>
+          <button class="theme-toggle" aria-label="Toggle light and dark theme" data-testid="theme-toggle">
+            <svg class="icon-sun" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.9 4.9l1.4 1.4M17.7 17.7l1.4 1.4M2 12h2M20 12h2M4.9 19.1l1.4-1.4M17.7 6.3l1.4-1.4"/></svg>
+            <svg class="icon-moon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+          </button>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- HERO -->
+    <section id="home" class="hero container">
+      <div class="hero-text reveal">
+        <h1>Hi, I'm <span class="accent">Mahmudul Hasan</span>.<br />I break things so your users don't.</h1>
+        <p class="lead">
+          I'm a Software Tester and Automation Engineer with <strong>12+ years</strong> of experience across web, mobile and API testing.
+          I design test automation frameworks, wire them into CI/CD, and make sure releases ship with confidence.
+        </p>
+        <div class="cta">
+          <a href="#contact" class="btn btn-primary">Contact Me</a>
+          <a href="#projects" class="btn btn-ghost">View Projects</a>
+          <a href="assets/Mahmudul_Hasan_Resume.pdf" class="btn btn-ghost" download data-testid="download-cv">Download CV</a>
+        </div>
+        <ul class="stats" aria-label="Highlights">
+          <li><strong>12+</strong><span>Years in QA</span></li>
+          <li><strong>4</strong><span>Companies</span></li>
+          <li><strong>10+</strong><span>Test tools mastered</span></li>
+        </ul>
+      </div>
+
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section container">
+      <h2 class="section-title reveal"><span class="mono accent">01.</span> About Me</h2>
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p>
+            I'm a passionate Software Quality Assurance engineer based in <strong>Dhaka, Bangladesh</strong>.
+            I build robust test automation frameworks covering end-to-end, REST API and mobile testing,
+            and integrate them into CI/CD pipelines so every release is checked automatically.
+          </p>
+          <p>
+            I've worked with cross-functional, cross-timezone teams in Europe and Asia, owning the full QA process:
+            requirement analysis, test design, execution, bug reporting, log monitoring and database validation.
+            I also use AI tools to speed up both automated and manual QA work.
+          </p>
+          <p>Outside work I enjoy reading books and blogs, travelling, and playing cricket, football, badminton, table tennis and FIFA.</p>
+        </div>
+        <div class="about-side reveal">
+          <div class="card">
+            <h3>Education</h3>
+            <p class="strong">Ahsanullah University of Science and Technology</p>
+            <p class="muted">B.Sc. in Computer Science and Engineering · 2009 – 2013</p>
+          </div>
+          <div class="card">
+            <h3>Certifications</h3>
+            <ul class="cert-list">
+              <li>Playwright with TypeScript <span class="muted">· Udemy</span></li>
+              <li>Selenium WebDriver with Java <span class="muted">· Test Automation University</span></li>
+              <li>API Testing with Postman &amp; REST Assured <span class="muted">· Udemy</span></li>
+              <li>Performance Testing with JMeter <span class="muted">· Udemy</span></li>
+              <li>Ethical Hacking <span class="muted">· Udemy</span></li>
+            </ul>
+            <a class="link" href="https://www.linkedin.com/in/mahmudulhasanautul/details/certifications/" target="_blank" rel="noopener">See all on LinkedIn →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section container">
+      <h2 class="section-title reveal"><span class="mono accent">02.</span> Skills</h2>
+      <div class="skills-grid">
+        <div class="card skill-card reveal">
+          <h3>UI Test Automation</h3>
+          <ul class="tags"><li>Playwright</li><li>Selenium WebDriver</li><li>WebdriverIO</li><li>Appium</li><li>Cucumber</li><li>Robot Framework</li><li>Protractor</li></ul>
+        </div>
+        <div class="card skill-card reveal">
+          <h3>API &amp; Performance</h3>
+          <ul class="tags"><li>REST Assured</li><li>Postman</li><li>Newman</li><li>Curl</li><li>JMeter</li></ul>
+        </div>
+        <div class="card skill-card reveal">
+          <h3>Languages</h3>
+          <ul class="tags"><li>TypeScript</li><li>JavaScript</li><li>Java</li><li>Python</li><li>SQL</li></ul>
+        </div>
+        <div class="card skill-card reveal">
+          <h3>CI/CD &amp; DevOps</h3>
+          <ul class="tags"><li>GitHub Actions</li><li>Jenkins</li><li>Docker</li><li>Kubernetes (OpenShift)</li></ul>
+        </div>
+        <div class="card skill-card reveal">
+          <h3>Security Testing</h3>
+          <ul class="tags"><li>Burp Suite</li><li>SQL Injection</li><li>XSS</li></ul>
+        </div>
+        <div class="card skill-card reveal">
+          <h3>Tools &amp; Process</h3>
+          <ul class="tags"><li>Jira</li><li>Confluence</li><li>TestRail</li><li>Git / GitHub</li><li>Bitbucket</li><li>Agile / Scrum</li></ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section container">
+      <h2 class="section-title reveal"><span class="mono accent">03.</span> Projects</h2>
+      <p class="section-sub reveal">Selected work from my GitHub. Each card opens the repository.</p>
+      <div class="projects-grid" data-testid="projects">
+        <a class="card project reveal" href="https://github.com/MahmudulHasan/EcommercePlaywright" target="_blank" rel="noopener">
+          <div class="project-top"><span class="folder" aria-hidden="true">{ }</span><span class="ext" aria-hidden="true">↗</span></div>
+          <h3>EcommercePlaywright</h3>
+          <p>BDD end-to-end test suite for an e-commerce application, with feature files written in Gherkin and step definitions in TypeScript.</p>
+          <ul class="tags small"><li>Playwright</li><li>TypeScript</li><li>Cucumber</li></ul>
+        </a>
+        <a class="card project reveal" href="https://github.com/MahmudulHasan/PostmanReports" target="_blank" rel="noopener">
+          <div class="project-top"><span class="folder" aria-hidden="true">{ }</span><span class="ext" aria-hidden="true">↗</span></div>
+          <h3>PostmanReports</h3>
+          <p>Automated API collection run with Newman, publishing HTML reports through a GitHub Actions pipeline.</p>
+          <ul class="tags small"><li>Postman</li><li>Newman</li><li>JavaScript</li><li>GitHub Actions</li></ul>
+        </a>
+        <a class="card project reveal" href="https://github.com/MahmudulHasan/AutomateTodoProtractor" target="_blank" rel="noopener">
+          <div class="project-top"><span class="folder" aria-hidden="true">{ }</span><span class="ext" aria-hidden="true">↗</span></div>
+          <h3>AutomateTodoProtractor</h3>
+          <p>Automated test cases for a Todo application, covering create, complete, filter and delete flows.</p>
+          <ul class="tags small"><li>Protractor</li><li>Node.js</li></ul>
+        </a>
+        <a class="card project reveal" href="https://github.com/MahmudulHasan/Leetcode-problems" target="_blank" rel="noopener">
+          <div class="project-top"><span class="folder" aria-hidden="true">{ }</span><span class="ext" aria-hidden="true">↗</span></div>
+          <h3>Leetcode-problems</h3>
+          <p>My solutions to LeetCode problems, kept to sharpen my data-structure and algorithm skills.</p>
+          <ul class="tags small"><li>JavaScript</li><li>TypeScript</li><li>Java</li></ul>
+        </a>
+        <a class="card project reveal" href="https://github.com/MahmudulHasan/Geeks4Geeks" target="_blank" rel="noopener">
+          <div class="project-top"><span class="folder" aria-hidden="true">{ }</span><span class="ext" aria-hidden="true">↗</span></div>
+          <h3>Geeks4Geeks</h3>
+          <p>Solutions to GeeksforGeeks practice problems, solved in several languages.</p>
+          <ul class="tags small"><li>JavaScript</li><li>TypeScript</li><li>Java</li></ul>
+        </a>
+        <a class="card project project-more reveal" href="https://github.com/MahmudulHasan?tab=repositories" target="_blank" rel="noopener">
+          <div class="project-top"><span class="folder" aria-hidden="true">+</span><span class="ext" aria-hidden="true">↗</span></div>
+          <h3>More on GitHub</h3>
+          <p>Browse all my repositories, experiments and work in progress.</p>
+        </a>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience" class="section container">
+      <h2 class="section-title reveal"><span class="mono accent">04.</span> Experience</h2>
+      <ol class="timeline" data-testid="timeline">
+        <li class="reveal">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="card">
+            <div class="tl-head">
+              <h3>Senior SQA Engineer <span class="accent">@ CHEQ</span></h3>
+              <span class="tl-date mono">May 2025 – Present</span>
+            </div>
+            <ul>
+              <li>Own the full QA process end to end, from requirement analysis to log monitoring and database validation.</li>
+              <li>Design and maintain automation frameworks for the CHEQ web app and POS system.</li>
+              <li>Maintain and improve CI/CD pipelines with GitHub Actions, and use AI tools to speed up testing.</li>
+            </ul>
+            <ul class="tags small"><li>WebdriverIO</li><li>TypeScript</li><li>Appium</li><li>Playwright</li><li>GitHub Actions</li></ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="card">
+            <div class="tl-head">
+              <h3>Quality Assurance Engineer <span class="accent">@ Stibo DX</span></h3>
+              <span class="tl-date mono">Aug 2019 – Apr 2025</span>
+            </div>
+            <ul>
+              <li>Ran QA across the SDLC with offshore and local developers and the Product Owner.</li>
+              <li>Wrote and maintained automated tests in Selenium (Python/Robot Framework) and WebdriverIO (TypeScript/Cucumber).</li>
+              <li>Ran tests in a Kubernetes (OpenShift) pipeline across stages; managed test cases in TestRail.</li>
+            </ul>
+            <ul class="tags small"><li>Selenium</li><li>Robot Framework</li><li>WebdriverIO</li><li>OpenShift</li><li>TestRail</li></ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="card">
+            <div class="tl-head">
+              <h3>Test Automation Engineer <span class="accent">@ Pathao</span></h3>
+              <span class="tl-date mono">Jul 2018 – Jul 2019</span>
+            </div>
+            <ul>
+              <li>Automated nearly the whole regression suite for the Pathao Android app, run before every release.</li>
+              <li>QA for the Pathao iOS User app, including regression, smoke and alpha testing.</li>
+            </ul>
+            <ul class="tags small"><li>Appium</li><li>Python</li><li>Robot Framework</li></ul>
+          </div>
+        </li>
+        <li class="reveal">
+          <div class="tl-dot" aria-hidden="true"></div>
+          <div class="card">
+            <div class="tl-head">
+              <h3>QA Automation Engineer <span class="accent">@ Widespace</span></h3>
+              <span class="tl-date mono">Sep 2014 – May 2018</span>
+            </div>
+            <ul>
+              <li>Automated tests for two web applications with Protractor, run through Jenkins.</li>
+              <li>Built an automated screenshot system (Node.js, MongoDB, InternJS, Appium) that helped the sales team create customer presentations.</li>
+            </ul>
+            <ul class="tags small"><li>Protractor</li><li>Jenkins</li><li>Node.js</li><li>MongoDB</li></ul>
+          </div>
+        </li>
+      </ol>
+    </section>
+
+    <!-- TESTED -->
+    <section id="tested" class="section container">
+      <h2 class="section-title reveal"><span class="mono accent">05.</span> This Site Is Tested</h2>
+      <div class="tested-grid">
+        <div class="tested-text reveal">
+          <p>
+            I treat my portfolio like any product I'd ship. Every push runs a Playwright suite on desktop and mobile in
+            GitHub Actions, and the site only deploys if every test passes.
+          </p>
+          <ul class="tags">
+            <li>Playwright</li><li>TypeScript</li><li>axe-core</li><li>GitHub Actions</li><li>GitHub Pages</li>
+          </ul>
+          <p class="tested-links">
+            <a class="link" href="https://github.com/MahmudulHasan/MahmudulHasan.github.io/blob/main/tests/portfolio.spec.ts" target="_blank" rel="noopener">View the tests →</a>
+          </p>
+        </div>
+        <div class="reveal">
+          <div class="term" aria-hidden="true">
+            <div class="term-bar"><i></i><i></i><i></i><span class="mono">npx playwright test</span></div>
+            <pre class="mono"><code><span class="muted">Running 22 tests using 5 workers</span>
+<span class="muted">[desktop] + [mobile] › portfolio.spec.ts</span>
+
+<span class="ok">✓</span> has the right title and hero
+<span class="ok">✓</span> every section exists
+<span class="ok">✓</span> nav links scroll to their sections
+<span class="ok">✓</span> shows all GitHub projects with valid links
+<span class="ok">✓</span> experience timeline lists 4 roles
+<span class="ok">✓</span> CV download works
+<span class="ok">✓</span> theme toggle switches and remembers
+<span class="ok">✓</span> no horizontal scroll
+<span class="ok">✓</span> no console errors
+<span class="ok">✓</span> no serious a11y violations (dark)
+<span class="ok">✓</span> no serious a11y violations (light)
+
+<span class="ok">22 passed</span> <span class="muted">(5.7s)</span>
+<span class="cursor">▍</span></code></pre>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section container">
+      <h2 class="section-title reveal"><span class="mono accent">06.</span> Get In Touch</h2>
+      <p class="section-sub reveal">Open to new opportunities, collaborations and a good QA conversation. My inbox is always open.</p>
+      <div class="contact-grid">
+        <a class="card contact-card reveal" href="mailto:autul.aust@gmail.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></svg>
+          <h3>Email</h3><p>autul.aust@gmail.com</p>
+        </a>
+        <a class="card contact-card reveal" href="https://www.linkedin.com/in/mahmudulhasanautul/" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="3"/><path d="M8 10v7M8 7v.01M12 17v-4a2 2 0 0 1 4 0v4M12 10v7"/></svg>
+          <h3>LinkedIn</h3><p>in/mahmudulhasanautul</p>
+        </a>
+        <a class="card contact-card reveal" href="https://github.com/MahmudulHasan" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 19c-4 1.5-4-2-6-2.5m12 5v-3.5a3 3 0 0 0-.9-2.4c3-.3 6-1.5 6-6.5a5 5 0 0 0-1.4-3.5 4.6 4.6 0 0 0-.1-3.5s-1.1-.3-3.6 1.4a12.4 12.4 0 0 0-6.5 0C6 1.7 4.9 2 4.9 2a4.6 4.6 0 0 0-.1 3.5A5 5 0 0 0 3.4 9c0 5 3 6.2 6 6.5a3 3 0 0 0-.9 2.4V21"/></svg>
+          <h3>GitHub</h3><p>MahmudulHasan</p>
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year">2026</span> Mahmudul Hasan · Built by hand, tested with Playwright.</p>
+      <a href="#home" class="link">Back to top ↑</a>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
