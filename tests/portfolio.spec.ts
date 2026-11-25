@@ -29,13 +29,15 @@ test('nav links scroll to their sections', async ({ page, isMobile }) => {
 });
 
 test('shows all GitHub projects with valid links', async ({ page }) => {
-  const cards = page.getByTestId('projects').locator('a.project');
-  await expect(cards).toHaveCount(6);
-  for (const name of ['EcommercePlaywright', 'PostmanReports', 'webdriverio-typescript-project', 'Leetcode-problems', 'Geeks4Geeks']) {
-    const card = cards.filter({ hasText: name });
-    await expect(card).toHaveAttribute('href', `https://github.com/MahmudulHasan/${name}`);
-    await expect(card).toHaveAttribute('rel', /noopener/);
+  const grid = page.getByTestId('projects');
+  await expect(grid.locator('.project')).toHaveCount(7);
+  for (const name of ['LaughterMaster', 'EcommercePlaywright', 'webdriverio-typescript-project', 'PostmanReports', 'Leetcode-problems', 'Geeks4Geeks']) {
+    const link = grid.locator(`a[href="https://github.com/MahmudulHasan/${name}"]`);
+    await expect(link).toHaveCount(1);
+    await expect(link).toHaveAttribute('rel', /noopener/);
   }
+  await expect(page.getByTestId('project-laughtermaster').getByRole('link', { name: /Live demo/ }))
+    .toHaveAttribute('href', 'https://laughter-master.vercel.app');
 });
 
 test('experience timeline lists 4 roles, newest first', async ({ page }) => {
